@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html data-ng-app="SocialLoginActivity">
+<head>
+<meta charset="utf-8">
+
+<title>Geppetto-SocialLogin</title>
+
+<!-- CSS Libraries -->
+<link rel="stylesheet" href="vendor/css/bootstrap/bootstrap.min.css">
+<link rel="stylesheet" href="vendor/css/font-awesome/font-awesome.css">
+<link rel="stylesheet" href="app/css/app.css">
+
+</head>
+
+	<!--Load g+ SDK asynchronously-->
+	<script>
+	  (function () {
+		var po = document.createElement('script');
+		po.type = 'text/javascript'; po.async = true;
+		po.src = 'https://plus.google.com/js/client:plusone.js';
+		var s = document.getElementsByTagName('script')[0];
+		s.parentNode.insertBefore(po, s);
+	  })();
+	</script>
+
+<body class="app" ng-cloak>
+
+	<div ng-view=""></div>
+
+	<!-- Libraries -->
+	<script src="vendor/js/jquery/jquery-2.1.4.min.js"></script>
+	<script src="vendor/js/angular/angular.min.js"></script>
+	<script src="vendor/js/angular/angular-route.min.js"></script>
+	<script src="vendor/js/angular/angular-cookies.min.js"></script>
+	<script src="vendor/js/angular-ui/ui-bootstrap-custom.js"></script>
+	<script src="vendor/js/angular/angular-facebook.js"></script>
+
+	<!-- Sources -->
+	<script src="app/js/app.js"></script>
+
+	<!-- Directives -->
+
+	<!-- Controllers -->
+	<script src="app/js/controllers/login.js"></script>
+	<script src="app/js/controllers/fb-login-modal.js"></script>
+	<!-- Factories -->
+	<script src="app/js/factories/auth.js"></script>
+	<!-- Services -->
+	<script src="app/js/services/restURLService.js"></script>
+
+</body>
+</html>
